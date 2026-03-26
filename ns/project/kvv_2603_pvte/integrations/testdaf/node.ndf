@@ -46,11 +46,35 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Karthik.V10@ibm.com</value>
-    <value name="lastModifiedDate">1774508048490</value>
+    <value name="lastModifiedDate">1774522520685</value>
     <value name="displayName">testdaf</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">SIQACloudStreamsTests</value>
+          <value name="groupName">SIQACloudStreamsTests;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">SIQACloudStreamsTests:connetorOperations</value>
+          <value name="serviceName">SIQACloudStreamsTests:connetorOperations</value>
+          <value name="displayName">connetorOperations</value>
+          <value name="assetType">Flow Service</value>
+          <value name="nsName">SIQACloudStreamsTests:connetorOperations</value>
+          <value name="itemType">flowService</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">1</number>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">SERVICES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
@@ -63,20 +87,17 @@
           <value name="serviceName">pub.flow:debugLog</value>
           <value name="transformerSupport">false</value>
         </record>
-        <number name="ui_step_index" type="Long">1</number>
-        <value name="nodePathNew">0</value>
-        <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">1</number>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
     </record>
-    <record name="edgeServer" javaclass="com.wm.util.Values">
-      <value name="group">Default</value>
-      <value name="id">default</value>
-      <value name="name">Cloud Execution</value>
-    </record>
-    <value name="createdDate">1774508048490</value>
   </record>
   <value name="svc_in_validator_options">none</value>
   <value name="svc_out_validator_options">none</value>

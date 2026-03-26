@@ -1,6 +1,12 @@
 version: "1.0"
 projectName: Kvv_2603_pvtEProject
 runtimes:
+- runtimeAlias: kvv_2603
+  assets:
+  - name: fld_156407546_stage00.projects.fl776e014ec2a94340b85563345e36a1a0.integrations:tppfcs
+    type: flow
+    stepId: /1
+    reference: fld_156407546_stage00.projects.fl776e014ec2a94340b85563345e36a1a0.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
 - runtimeAlias: Cloud Designtime
   assets:
   - name: fld_156407546_stage00.projects.fl776e014ec2a94340b85563345e36a1a0.integrations:tppfcs

@@ -8,11 +8,25 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: WmSalesforceRESTProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.kvv_2603_pvte.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.connections:rest2603
+  packages:
+  - name: Kvv_2603_pvtEProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
 - serviceName: project.kvv_2603_pvte.integrations:Copy_testdaf
   packages:
   - name: Kvv_2603_pvtEProject
@@ -21,6 +35,8 @@ services:
     version: 12.0.0.0.17
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
@@ -33,3 +49,108 @@ services:
     version: 12.0.0.0.17
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: SIQACloudStreamsTests:connetorOperations
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+- serviceName: SIQACloudStreamsTests:createAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+- serviceName: SIQACloudStreamsTests:retrieveAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+- serviceName: SIQACloudStreamsTests:deleteAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+configurationVariables:
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.refreshToken
+  : "{AES}iVEYOEICT1x7P9RL3dwVv0pQv1IODTw0Qm0vrSHPR8I0XZ0/KrBE7WODHo6AzR160DOPwKqbb3oMTCKFQlnaQ/g7JkyMztfW0zwKJm6lvFZuzitVA0hSa8yUlxGm0evN"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.providerUrl
+  : https://d0o000001qr6keac-dev-ed.my.salesforce.com
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth.accessToken
+  : "{AES}bzO+KX5xKoE0CKrgiYZryJcjrxrt7HaM5972en7kZK9SYyS42n6ldW5j/rG7lC2wMUXCKBFvxvnkOBenvrq9ixQAEinqPrEaOxmwaF7Bpolfpn/3YJoMYdyrBIK7WSkuYfRpq04bdGvWTG5R62N0rGmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.scope
+  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.poolable
+  : "true"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth.consumerId
+  : 3MVG9pe2TCoA1Pf6F9PMP1LEDsuYm6pfL6T8OD7YSQUQsx36uZNIjUH3BCzBZ8lgStKaUEITogkQ7hNByxJjv
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth.consumerSecret
+  : "{AES}8bc8/WHaL3dph5PtuD02009Twi827NgOvyLy8mkfF31b5gfhajCNPAG/2OxW9yx8fPwx12ONSDGw1NRjVAxIemmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..kvv_2603_pvte..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest2603.timeoutType
+  : auto

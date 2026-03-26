@@ -7,3 +7,29 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: SIQACloudStreamsTests
+  gitServerName: kvv
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+services:
+- serviceName: project.kvv_2603_pvte.integrations:Copy_testdaf
+  packages:
+  - name: Kvv_2603_pvtEProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
+- serviceName: project.kvv_2603_pvte.integrations:testdaf
+  packages:
+  - name: Kvv_2603_pvtEProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
